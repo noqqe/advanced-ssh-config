@@ -5,7 +5,7 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/moul/advanced-ssh-config/pkg/templates"
+	"github.com/noqqe/advanced-ssh-config/pkg/templates"
 )
 
 // ExecDriver is a driver that execs some texts to the terminal

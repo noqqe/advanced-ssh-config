@@ -8,16 +8,16 @@ import (
 	"github.com/Sirupsen/logrus"
 	"github.com/urfave/cli"
 
-	"github.com/moul/advanced-ssh-config/pkg/commands"
-	. "github.com/moul/advanced-ssh-config/pkg/logger"
-	"github.com/moul/advanced-ssh-config/pkg/version"
+	"github.com/noqqe/advanced-ssh-config/pkg/commands"
+	. "github.com/noqqe/advanced-ssh-config/pkg/logger"
+	"github.com/noqqe/advanced-ssh-config/pkg/version"
 )
 
 func main() {
 	app := cli.NewApp()
 	app.Name = path.Base(os.Args[0])
 	app.Author = "Manfred Touron"
-	app.Email = "https://github.com/moul/advanced-ssh-config"
+	app.Email = "https://github.com/noqqe/advanced-ssh-config"
 	app.Version = version.VERSION + " (" + version.GITCOMMIT + ")"
 	app.Usage = "advanced ssh config"
 	app.EnableBashCompletion = true

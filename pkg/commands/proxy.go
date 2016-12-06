@@ -23,8 +23,8 @@ import (
 	shlex "github.com/flynn/go-shlex"
 	"github.com/urfave/cli"
 
-	"github.com/moul/advanced-ssh-config/pkg/config"
-	. "github.com/moul/advanced-ssh-config/pkg/logger"
+	"github.com/noqqe/advanced-ssh-config/pkg/config"
+	. "github.com/noqqe/advanced-ssh-config/pkg/logger"
 )
 
 func cmdProxy(c *cli.Context) error {
@@ -59,7 +59,7 @@ func cmdProxy(c *cli.Context) error {
 	}
 	if isOutdated {
 		Logger.Debugf("The configuration file is outdated, rebuilding it before calling ssh")
-		Logger.Warnf("'~/.ssh/config' has been rewritten.  SSH needs to be restarted.  See https://github.com/moul/advanced-ssh-config/issues/122 for more information.")
+		Logger.Warnf("'~/.ssh/config' has been rewritten.  SSH needs to be restarted.  See https://github.com/noqqe/advanced-ssh-config/issues/122 for more information.")
 		Logger.Debugf("Saving SSH config")
 		err = conf.SaveSSHConfig()
 		if err != nil {

@@ -3,7 +3,7 @@ package config
 import (
 	"encoding/json"
 
-	"github.com/moul/advanced-ssh-config/pkg/hooks"
+	"github.com/noqqe/advanced-ssh-config/pkg/hooks"
 )
 
 // HostHooks represents a static list of Hooks

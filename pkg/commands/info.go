@@ -9,9 +9,9 @@ import (
 	"github.com/bugsnag/osext"
 	"github.com/urfave/cli"
 
-	"github.com/moul/advanced-ssh-config/pkg/config"
-	. "github.com/moul/advanced-ssh-config/pkg/logger"
-	"github.com/moul/advanced-ssh-config/pkg/utils"
+	"github.com/noqqe/advanced-ssh-config/pkg/config"
+	. "github.com/noqqe/advanced-ssh-config/pkg/logger"
+	"github.com/noqqe/advanced-ssh-config/pkg/utils"
 )
 
 func cmdInfo(c *cli.Context) error {

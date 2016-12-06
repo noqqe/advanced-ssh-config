@@ -3,7 +3,7 @@ package hooks
 import (
 	"os"
 
-	"github.com/moul/advanced-ssh-config/pkg/templates"
+	"github.com/noqqe/advanced-ssh-config/pkg/templates"
 )
 
 // WriteDriver is a driver that writes some texts to the terminal

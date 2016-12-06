@@ -1,4 +1,4 @@
-package: github.com/moul/advanced-ssh-config
+package: github.com/noqqe/advanced-ssh-config
 import:
 - package: github.com/Sirupsen/logrus
   version: cd7d1bbe41066b6c1f19780f895901052150a575

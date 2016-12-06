@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	composeyaml "github.com/docker/libcompose/yaml"
-	"github.com/moul/advanced-ssh-config/pkg/utils"
+	"github.com/noqqe/advanced-ssh-config/pkg/utils"
 )
 
 // Host defines the configuration flags of a host

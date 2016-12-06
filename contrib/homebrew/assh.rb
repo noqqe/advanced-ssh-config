@@ -2,11 +2,11 @@ require "language/go"
 
 class Assh < Formula
   desc "assh: Advanced SSH config - A transparent wrapper that adds regex, aliases, gateways, includes, dynamic hostnames to SSH"
-  homepage "https://github.com/moul/advanced-ssh-config"
-  url "https://github.com/moul/advanced-ssh-config/archive/v2.4.1.tar.gz"
+  homepage "https://github.com/noqqe/advanced-ssh-config"
+  url "https://github.com/noqqe/advanced-ssh-config/archive/v2.4.1.tar.gz"
   sha256 "8867df447e654dae384cf598a81eb6be57a49082449ef4387f33725bb216853c"
 
-  head "https://github.com/moul/advanced-ssh-config.git"
+  head "https://github.com/noqqe/advanced-ssh-config.git"
 
   depends_on "go" => :build
 
@@ -14,12 +14,12 @@ class Assh < Formula
     ENV["GOPATH"] = buildpath
     ENV["GOBIN"] = buildpath
     ENV["GO15VENDOREXPERIMENT"] = "1"
-    (buildpath/"src/github.com/moul/advanced-ssh-config").install Dir["*"]
+    (buildpath/"src/github.com/noqqe/advanced-ssh-config").install Dir["*"]
 
-    system "go", "build", "-o", "#{bin}/assh", "-v", "github.com/moul/advanced-ssh-config/cmd/assh/"
+    system "go", "build", "-o", "#{bin}/assh", "-v", "github.com/noqqe/advanced-ssh-config/cmd/assh/"
 
-    bash_completion.install "src/github.com/moul/advanced-ssh-config/contrib/completion/bash_autocomplete"
-    zsh_completion.install "src/github.com/moul/advanced-ssh-config/contrib/completion/zsh_autocomplete"
+    bash_completion.install "src/github.com/noqqe/advanced-ssh-config/contrib/completion/bash_autocomplete"
+    zsh_completion.install "src/github.com/noqqe/advanced-ssh-config/contrib/completion/zsh_autocomplete"
   end
 
   def caveats

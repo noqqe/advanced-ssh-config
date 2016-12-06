@@ -5,8 +5,8 @@ import (
 	"os"
 	"os/exec"
 
-	. "github.com/moul/advanced-ssh-config/pkg/logger"
-	"github.com/moul/advanced-ssh-config/pkg/templates"
+	. "github.com/noqqe/advanced-ssh-config/pkg/logger"
+	"github.com/noqqe/advanced-ssh-config/pkg/templates"
 )
 
 // DaemonDriver is a driver that daemons some texts to the terminal

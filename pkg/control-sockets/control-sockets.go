@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/mattn/go-zglob"
-	"github.com/moul/advanced-ssh-config/pkg/utils"
+	"github.com/noqqe/advanced-ssh-config/pkg/utils"
 )
 
 // ControlSocket defines a unix-domain socket controlled by a master SSH process

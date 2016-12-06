@@ -9,8 +9,8 @@ import (
 	"golang.org/x/crypto/ssh/terminal"
 
 	"github.com/mgutz/ansi"
-	"github.com/moul/advanced-ssh-config/pkg/config"
-	. "github.com/moul/advanced-ssh-config/pkg/logger"
+	"github.com/noqqe/advanced-ssh-config/pkg/config"
+	. "github.com/noqqe/advanced-ssh-config/pkg/logger"
 )
 
 func cmdList(c *cli.Context) error {

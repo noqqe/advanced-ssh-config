@@ -1,5 +1,5 @@
 BINARIES ?=	assh
-GODIR ?=	github.com/moul/advanced-ssh-config
+GODIR ?=	github.com/noqqe/advanced-ssh-config
 
 PKG_BASE_DIR ?=	./pkg
 CONVEY_PORT ?=	9042
