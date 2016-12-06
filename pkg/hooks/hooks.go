@@ -61,9 +61,6 @@ func New(expr string) (HookDriver, error) {
 	case "write":
 		driver, err := NewWriteDriver(param)
 		return driver, err
-	case "notify":
-		driver, err := NewNotificationDriver(param)
-		return driver, err
 	case "exec":
 		driver, err := NewExecDriver(param)
 		return driver, err
